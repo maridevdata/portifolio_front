@@ -6,13 +6,19 @@
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Generation Brasil">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
+
+        <link rel="icon" type="image/svg" href=".assets/img/favicon.svg"/>
+
+        <!-- Link para a Folha de Estilo da Página - CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css"/>
+
 		<title>Meu Perfil</title>
 	</head>
 	<body>
 		<!-- Cabeçalho da Página (header) -->
 		<header>
 			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
+			<div id="header_content" class="flex">
 				<!-- Titulo do Cabeçalho -->
 				<div id="titulo">
 					<!-- Meu nome -->
@@ -41,37 +47,41 @@
 		<main>
 
 			<!-- Seção Sobre você -->
-			<section id="about">
+			<section id="about" class="flex_start">
 
 				<!-- Título da Seção -->
-				<h2>Sobre Mim</h2>
+				<h2>Um pouco sobre mim...</h2>
 
 				<!-- Conteúdo da Seção -->
-				<div id="conteudo">
+				<div id="conteudo" class="flex">
 
 					<!-- Imagem do criador do conteúdo -->
 					<img
-						src="./assets/img/user_01.svg"
+						src="./assets/img/Foto_Perfil.png"
 						alt="Foto do criador desse conteudo"
+                        class="img_profile"
 					/>
 
 					<!-- Texto sobre o criador do conteúdo -->
 					<article id="sobre_texto">
 						<p>
-							Olá, sou a Mariana e tenho 27 anos! Durante esse último ano eu casei, adotei um caramelo (meu estagiario), comprei um apartamento, trouxe um companheiro de "infância" para morar comigo (meu SRD de 14 aninhos) e decidi migrar de carreira. Sem sombras de dúvidas, esse foi o ano que eu me encontrei!!!
+							Sou a Mariana e tenho 27 anos! Durante esse último ano eu casei, adotei um caramelo (meu estagiario), comprei um apartamento, trouxe um companheiro de "infância" para morar comigo (meu SRD de 14 aninhos) e decidi migrar de carreira. Sem sombras de dúvidas, esse foi o ano que eu me encontrei!!!
 						</p>
                            <p>
-							Nesse processo de autoconhecimento, encontrei meus principais amores (na ordem que esta ali em cima rs), e esse blog faz parte da contrução do meu amor pela programação! Participo de um bootcamp intensivo da Generation Brasil, e durante esse periodo eu aprendi uma base sólida sobre desenvolvimento full stack utilizando diversas tecnologias, como TypeScript, JavaScript, HTML, CSS, NestJS, Node.js, MySQL, entre outras... Como todos os meus amores, esse também é desafiador e trabalhoso tão quanto empolgante e gratificante.
+							Nesse processo de autoconhecimento, encontrei meus principais amores (na ordem que esta ali em cima rs), e esse blog faz parte da construção do meu amor pela programação! Participo de um bootcamp intensivo da Generation Brasil, e durante esse periodo eu aprendi uma base sólida sobre desenvolvimento fullstack utilizando diversas tecnologias, como TypeScript, JavaScript, HTML, CSS, NestJS, Node.js, MySQL, entre outras... Como todos os meus amores, esse também é desafiador e trabalhoso tão quanto empolgante e gratificante.
 						</p>
 					</article>
 				</div>
 			</section>
 
 			<!-- Seção contendo um vídeo da minha preferência -->
-			<section id="video">
+			<section id="video" class="flex_start">
+
+                <!--Seção com um vídeo de minha preferência-->
                 <h2>Um video que eu gosto muito:</h2>
 
-                <div id="youtube">
+                <!--Vídeo da seção-->
+                <div id="youtube" class="flex">
                     <iframe
                         width="560" 
                         height="315" 
@@ -90,7 +100,7 @@
 		</main>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
+		<footer class="flex">
 
             <section id="redes_sociais">
                 <a href="">
